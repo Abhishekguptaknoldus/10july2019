@@ -1,0 +1,28 @@
+#[macro_use]
+extern crate text_io;
+
+
+struct Employee{
+    employee_name:String,
+    employee_id: u64 ,
+    employee_profile:String,
+
+}
+
+fn main (){
+    let  name :String=read!();
+    let  profile :String=read!();
+    let  id : u64=read!();
+
+    let employee=Employee{
+        employee_name:name,
+        employee_id:id,
+        employee_profile:profile,
+    };
+
+    println!("{}", employee.employee_name);
+    println!("{}", employee.employee_id);
+    println!("{}", employee.employee_profile);
+
+}
+
